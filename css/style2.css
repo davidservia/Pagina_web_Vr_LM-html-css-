@@ -4,7 +4,7 @@ body {background-image:url("../images/background.jpg");
     margin: 0;
     padding:0;
 }
-/*** estilo de norse myth **/
+/*** estilo de letra **/
 /*****estilo general de la pagina ********/
 @font-face {
     font-family: titulos;
@@ -29,7 +29,7 @@ body {background-image:url("../images/background.jpg");
     height:40vh;
     position:relative; 
 }
-/*Si la parte de la imagen que queremos cortar se come la imagen cambiar left por right para no comerte el texto, todo esto si el vikingo esta en el lado contrario*/
+/*Si la parte de la imagen que queremos cortar se come la imagen cambiar left por right para no comerte el texto,*/
 #gafasvr h1 {position:relative;
         top:70px;
         left:20px;
@@ -151,7 +151,6 @@ footer {
 /********media queries **************/
 
 @media only screen and (max-width: 850px) {
-        #drakkar {width:100%;} /****para que el barco pille 100%***/
         .mitad {width:100%;}    /*** desactivo las mitades , cuando falta espacio **/
         #historiavr {width:50%}       /***** luego se puede editar las cosas de dentro de las mitades, la reajusto ****/
         .cuarto {width:50%;} /**** para que salgan solo dos al encogerse ***/

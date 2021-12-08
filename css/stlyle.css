@@ -40,13 +40,7 @@ body {background-image:url("../images/background.jpg");
 
 #container iframe {margin:auto;
                     display:block;} /** le obligo a comportarse como un bloque para poderlo centrar */
-/*footers*/
-footer {
-    text-align: center;
-    padding: 3px;
-    background-color: rgb(136, 123, 255);
-    color: rgb(66, 38, 194);
-  }
+
 
 /*** media queries ****/
 @media only screen and (max-width:600px) {
