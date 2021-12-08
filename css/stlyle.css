@@ -1,0 +1,54 @@
+body {background-image:url("../images/background.jpg");
+    background: size 100%;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding:0;
+}
+
+#container {background-color:white;
+            width:80%; /*ancho responsive */
+            margin: auto;
+            padding:2%;
+}
+
+#container h1{text-align:center;}
+/* para que la imagen del usuariovr sea responsive */
+
+#hero {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: 66%; /*en funcion del centro de intreses de la imagen */
+    height:95vh;
+    position:relative; 
+}
+/*Si la parte de la imagen que queremos cortar se come la imagen cambiar left por right para no comerte el texto, todo esto si la persona mayor esta en el lado contrario*/
+#hero h1 {position:absolute;
+        top:20px;
+        left:30px;
+        font-family: runas;
+        font-size: 2.5em;
+}
+#container #gafas {width:85%;
+    display:block;
+    margin:auto;}
+
+#container h2{background-color:rgb(124,165,187);}
+
+.fa{color: white;
+    margin:0 5px;}
+
+
+#container iframe {margin:auto;
+                    display:block;} /** le obligo a comportarse como un bloque para poderlo centrar */
+/*footers*/
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(136, 123, 255);
+    color: rgb(66, 38, 194);
+  }
+
+/*** media queries ****/
+@media only screen and (max-width:600px) {
+    #container {width:96%;}
+}

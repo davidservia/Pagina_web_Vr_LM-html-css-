@@ -1,0 +1,162 @@
+body {background-image:url("../images/background.jpg");
+    background: size 100%;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding:0;
+}
+/*** estilo de norse myth **/
+/*****estilo general de la pagina ********/
+@font-face {
+    font-family: titulos;
+    src: url("../fuentes/sewer.ttf");
+}
+
+@font-face {
+    font-family: texto;
+    src: url("../fuentes/stocky.ttf");
+}
+
+
+#container {width:95%;
+            margin:auto;
+        }
+/******** estilo de hero section *********/
+
+#gafasvr {
+    background-image: url("../images/historia1.jpg");
+    background-size: cover;
+    background-position: 40%; /*en funcion del centro de intreses de la imagen */
+    height:40vh;
+    position:relative; 
+}
+/*Si la parte de la imagen que queremos cortar se come la imagen cambiar left por right para no comerte el texto, todo esto si el vikingo esta en el lado contrario*/
+#gafasvr h1 {position:relative;
+        top:70px;
+        left:20px;
+        font-family: titulos;
+        font-size: 5em;
+}
+
+
+
+#cta {position:absolute;
+    bottom: 85px;
+    left:12px;
+    padding:10px;
+    background-color:rgb(39, 209, 33);
+    border-radius:20px;
+    text-transform: uppercase;
+}
+#cta:hover {background-color:rgb(184, 177, 100);
+            cursor:pointer;
+}
+
+/******Estilo de Introduction *****************/
+
+#Introduction {color:white;
+            font-family:texto;
+            padding:4% 8%;
+            border-bottom: 3px solid rgb(184,177, 100);
+}
+
+#Introduction h1 {font-family:titulos;
+                text-align:center;
+                font-size:2.5em;
+}
+#Introduction p {font-size: 1.5em;
+                text-align: justify;
+                
+}
+
+#Introduction p::first-letter {font-size: 2em;
+                                color:rgb(184, 177, 100);
+}
+
+#tiposdegafas {width:100%;
+        float:left; /*imagen pegada a la izquierda y texto alrededor */
+        margin:10px;      
+}
+
+/****** estilo de la sección history ***********/
+
+#history {font-family: texto;
+            color:white;
+            font-size:1.5em;
+            border-bottom: 3px solid rgb(184,177, 100);}
+
+.mitad {width:50%;
+        float:left;}
+
+#izquierda {
+            box-sizing: border-box;
+            padding:4%;
+            text-align: center;}
+#izquierda h1 {font-family: titulos;
+                text-align: center;
+                font-size: 2.5em;}
+
+#izquierda p:first-letter {font-size: 1.5em;
+                color:rgb(184, 177, 100);}
+#derecha {margin-top:40px;}
+
+#historiavr {width:60%;  /******* es el 50% de su columna, de su mitad ***/
+        display: block; /*******para que se comporte como un bloque y se deje centrar **/
+        margin: auto;   /**** y se deje centrar ****/
+}
+.clearFloat{clear:both}
+
+/*****************estilo 4 columnas ********/
+#gallery h1{font-family: titulos;
+    color:white;
+    font-size:2.5em; 
+    text-align:center;
+}
+.cuarto{width:25%;
+/*      background-color: white /  */ /*para comprabar si se ve*/
+float: left;
+padding: 2%;
+box-sizing: border-box;
+border:1px solid rgb(134,130,77);
+}
+
+.cuarto h2 {font-family:titulos;
+    text-align: center;
+    color:white;}
+
+.cuarto img {width:100%;}
+
+
+/***************estilo de nav*******************/
+nav {color:white;
+    padding: 10px;
+    text-align: center;
+    font-family: titulos;}
+
+a {color:white;
+    text-decoration:none;}
+
+html {
+    scroll-behavior: smooth;
+    }
+/************footers*****************/
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(136, 123, 255);
+    color: rgb(66, 38, 194);
+    text-align: center;
+    font-family: titulos;
+  }
+
+/********media queries **************/
+
+@media only screen and (max-width: 850px) {
+        #drakkar {width:100%;} /****para que el barco pille 100%***/
+        .mitad {width:100%;}    /*** desactivo las mitades , cuando falta espacio **/
+        #historiavr {width:50%}       /***** luego se puede editar las cosas de dentro de las mitades, la reajusto ****/
+        .cuarto {width:50%;} /**** para que salgan solo dos al encogerse ***/
+}
+
+@media only screen and (max-width:500px) {
+    .cuarto{width:100%;}
+}
