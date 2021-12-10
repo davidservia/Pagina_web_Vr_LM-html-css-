@@ -35,6 +35,7 @@ body {background-image:url("../images/background.jpg");
         left:20px;
         font-family: titulos;
         font-size: 5em;
+        color: white;
 }
 
 
@@ -116,14 +117,14 @@ body {background-image:url("../images/background.jpg");
 float: left;
 padding: 2%;
 box-sizing: border-box;
-border:1px solid rgb(134,130,77);
 }
 
 .cuarto h2 {font-family:titulos;
     text-align: center;
     color:white;}
 
-.cuarto img {width:100%;}
+.cuarto img {width:100%;
+            display: inline-block;}
 
 
 /***************estilo de nav*******************/
@@ -147,6 +148,11 @@ footer {
     text-align: center;
     font-family: titulos;
   }
+#github {
+    width:8%;
+    display: block;
+    margin: auto;
+}
 
 /********media queries **************/
 
