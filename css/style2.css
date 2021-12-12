@@ -1,7 +1,7 @@
 body {background-image:url("../images/background.jpg");
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
-    background-size:auto;
+    background-size:100%;
     
 }
 /*** estilo de letra **/
@@ -57,7 +57,7 @@ body {background-image:url("../images/background.jpg");
 
 #Introduction {color:white;
             font-family:texto;
-            padding:4% 8%;
+            padding:6% 8%;
             border-bottom: 3px solid rgb(184,177, 100);
 }
 
@@ -161,32 +161,6 @@ box-sizing: border-box;
     color: white;
   }
 
-@media screen and (max-width: 850px) {
-    .topnav a:not(:first-child) {
-        display:none;
-    }
-
-    .topnav a.icon {
-        float:right;
-        display:block;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .topnav.responsive {
-        position:relative;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
 
 /************footers*****************/
 footer {
@@ -196,7 +170,7 @@ footer {
     color: rgb(66, 38, 194);
     text-align: center;
     font-family: titulos;
-  }
+}
   #grid {
     display: grid;
     grid-template-columns: auto auto auto;
@@ -206,7 +180,6 @@ footer {
 }
 
 .col {
-    align-self: center;
     margin: auto;
     padding: 2%;
     height: 95px;
@@ -224,8 +197,30 @@ footer {
         .mitad {width:100%;}    /*** desactivo las mitades , cuando falta espacio **/
         #historiavr {width:50%}       /***** luego se puede editar las cosas de dentro de las mitades, la reajusto ****/
         .cuarto {width:50%;} /**** para que salgan solo dos al encogerse ***/
-}
+        .topnav a:not(:first-child) {
+            display:none;
+        }
+        .topnav a.icon {
+            float:right;
+            display:block;
+        }
+    }
 
 @media only screen and (max-width:500px) {
     .cuarto{width:100%;}
+    .topnav.responsive {
+        position:relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
 }
+
+
