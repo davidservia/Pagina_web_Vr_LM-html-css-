@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Virtual reality</title>
-    <link rel="shortcut icon" href="./images/favicon.ico"
-    type="image/x-icon">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico"/>
     <link rel="stylesheet" href="./css/stlyle.css">
     <link rel = "preconnect" href = "https://fonts.googleapis.com">
 <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
 <link href = "https: //fonts.googleapis.com/css2? family = Ubuntu: wght @ 300 & display = swap "rel =" stylesheet ">
 <!---enlace a font awesome 4.7-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="./javascript/js.js"></script>
+<script src="./javascript/index.js"></script>
 </head>
-<body>
+<body onload="sonar('laser');">
+    <audio id="laser" preload="auto">
+        <source src="./sounds/alien_9.mp3"> </source>
+    </audio>
     <div id="container">
-        <h1>Connection with Virtual Reality. PRESS THE IMAGE</h1>
-        <a href="main.html"><img id="gafas" src="./images/realidad.jpg" alt="Realidad Virtual"></a>
+        <h1>Connection with Virtual Reality.<br> PRESS THE IMAGE</h1>
+        <a href="main.html"><img id="gafas" src="./images/realidad.jpg" alt="Realidad Virtual" onclick="sonar('laser');"></a>
         <h2><i class="fa fa-user-circle-o" aria-hidden="true"></i></i> 
         Requirements:</h2>
         <ul>
