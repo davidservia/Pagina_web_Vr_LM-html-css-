@@ -3,26 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Realidad Virtual </title>
     <!--Enlace con favicon-->
     <link rel="shortcut icon" type="image/x-icon" href="./favicon/favicon.ico"/>
     <!--enlace con el estilo-->
     <link rel="stylesheet" href="./css/style2.css">
-    <!--enlace con el javascript--><!--esta pagina web no tiene javascript,aunque se lo vamos a dejar por si la amplio-->
-    <script src="./javascripts/javascript.js"></script>
+    <script src="./javascript/index.js"></script>
 </head>
-<body>
-    <div id="container">
-        <nav>
+<body data-new-gr-c-s-check-loaded="8.867.0"; onload="sonar('laser');" >
+    <audio id="laser" preload="auto">
+        <source src="./sounds/alien_9.mp3"> </source>
+    </audio>
+        <nav class="topnav" id="myTopnav">
             <a href="#gafasvr" >Home</a>
             <a href="#Introduction" >Introduction</a>
             <a href="#history" >History</a>
             <a href="#gallery" >Gallery</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                &#9776;
+             </a>
         </nav>
-        <section id= "gafasvr"><!--Enlace con favicon-->
+        <section id= "gafasvr">
             <h1>VR </h1>
-          <a href="./index.html"><p id="cta">Configuration us!</p></a>
+          <a href="./index.html"><p id="cta" onload="sonar('laser');">Configuration us! </p></a>
             
         </section>
         <!--es un contenido de texto con una listuración-->
@@ -76,7 +80,11 @@
         <footer>
             <p>Author: David Servia Morales<br>
                 <a href="https://github.com/davidservia?tab=repositories">GitHub</a></p>
-                <a href="https://github.com/davidservia?tab=repositories"><img id="github" src="./images/logo-GitHub.png" alt="GitHub"></a>
+                <div id="grid">
+                    <img class="col" src="./images/bailarin.gif" alt="bailarin">
+                    <img class="github" src="./images/logo-GitHub.png" alt="Github" href="https://github.com/davidservia?tab=repositories">
+                    <img class="col" src="./images/bailarin.gif" alt="bailarin">
+                </div>
 
         </footer>
     </div>
